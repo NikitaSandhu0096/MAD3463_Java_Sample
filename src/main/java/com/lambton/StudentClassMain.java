@@ -18,5 +18,11 @@ public class StudentClassMain {
         listOfStudents[1] = s2;
        // s2.setData(2,"Rahul","Sandhu",s2BirthDate, Gender.MALE, 65);
         s2.printData();
+        for(Student s:listOfStudents){
+            s.calculateTotalMarks();
+            s.calculatePercentage();
+            s.calculateResult();
+        }
+
     }
 }
